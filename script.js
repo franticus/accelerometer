@@ -28,8 +28,8 @@ if (window.DeviceMotionEvent != undefined) {
 
     boundingBoxCheck();
 
-    sphere1.style.bottom = y1 + 'px';
-    sphere1.style.right = x1 + 'px';
+    sphere1.style.top = y1 + 'px';
+    sphere1.style.left = x1 + 'px';
   }, 1000);
 }
 function boundingBoxCheck() {
