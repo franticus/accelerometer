@@ -30,7 +30,7 @@ if (window.DeviceMotionEvent != undefined) {
 
     sphere1.style.top = y1 + 'px';
     sphere1.style.left = x1 + 'px';
-  }, 1000);
+  }, 30);
 }
 function boundingBoxCheck() {
   if (x1 < 0) {
