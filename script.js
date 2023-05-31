@@ -24,13 +24,12 @@ if (window.DeviceMotionEvent != undefined) {
     vx1 = vx1 * 0.98;
     vy1 = vy1 * 0.98;
     y1 = parseInt(y1 + vy1 / 50);
-    console.log('y1:', y1)
     x1 = parseInt(x1 + vx1 / 50);
-    console.log('x1:', x1)
 
     boundingBoxCheck();
 
-    sphere1.style.transform = `translateX(${x1} + px), translateY(${y1} + px)`;
+    sphere1.style.bottom = y1 + 'px';
+    sphere1.style.right = x1 + 'px';
   }, 1000);
 }
 function boundingBoxCheck() {
