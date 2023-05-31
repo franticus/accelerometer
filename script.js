@@ -28,8 +28,9 @@ if (window.DeviceMotionEvent != undefined) {
 
     boundingBoxCheck();
 
-    sphere1.style.top = y1 + 'px';
-    sphere1.style.left = x1 + 'px';
+    let sphereX = y1 + 'px';
+    let sphereY = x1 + 'px';
+    sphere1.style.transform = `translate(${sphereY}, ${sphereX})`;
   }, 30);
 }
 function boundingBoxCheck() {
