@@ -1,0 +1,11 @@
+.shape {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+#sphere1 {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background-color: blue;
+}
