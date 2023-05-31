@@ -30,7 +30,8 @@ if (window.DeviceMotionEvent != undefined) {
 
     let sphereX = y1 + 'px';
     let sphereY = x1 + 'px';
-    sphere1.style.transform = `translate(${sphereY}, ${sphereX}), rotate(${x1 * 0.01}deg)`;
+    let sphereRotate = x1 * 0.01 + 'deg';
+    sphere1.style.transform = `translate(${sphereY}, ${sphereX}), rotate(${sphereRotate})`;
   }, 30);
 }
 function boundingBoxCheck() {
