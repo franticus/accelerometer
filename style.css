@@ -1,12 +1,13 @@
 .shape {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 100px;
   margin: 0;
   padding: 0;
 }
 #sphere1 {
   border-radius: 50px;
   -webkit-border-radius: 50px;
-  background: url('./img/sagan.png');
+  background: url('./img/sagan.png') no-repeat; 
+  background-size: contain;
 }
