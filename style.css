@@ -8,5 +8,5 @@
 #sphere1 {
   border-radius: 50px;
   -webkit-border-radius: 50px;
-  background-color: blue;
+  background: url('./img/sagan.png');
 }
