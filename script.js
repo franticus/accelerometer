@@ -1,7 +1,7 @@
 const sphere1 = document.getElementById('sphere1');
 
-let x1 = 1000;
-let y1 = 1000;
+let x1 = 0;
+let y1 = 0;
 let vx1 = 0;
 let vy1 = 0;
 let ax1 = 0;
@@ -15,11 +15,11 @@ if (window.DeviceMotionEvent != undefined) {
   setInterval(function () {
     const landscapeOrientation = window.innerWidth / window.innerHeight > 1;
     if (landscapeOrientation) {
-      vx1 = vx1 + ay1;
-      vy1 = vy1 + ax1;
+      vx1 = vx1 - ay1;
+      vy1 = vy1 - ax1;
     } else {
-      vy1 = vy1 - ay1;
-      vx1 = vx1 + ax1;
+      vy1 = vy1 + ay1;
+      vx1 = vx1 - ax1;
     }
     vx1 = vx1 * 0.98;
     vy1 = vy1 * 0.98;
